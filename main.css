@@ -1,0 +1,360 @@
+*{
+    font-family: 'Racing Sans One' ;
+}
+
+/* HOME PAGE CSS */
+main.container-fluid,#home-body{
+    margin: 0;
+    padding: 0;
+    height: 569px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://young-machine.com/wp-content/uploads/2018/06/001-10.jpg");
+    animation: background-animation 1s ;
+}
+@keyframes background-animation{
+    0%{filter: blur(10px)}
+   100%{filter: blur(0px); background-image: url("https://young-machine.com/wp-content/uploads/2018/06/001-10.jpg");}
+}
+ 
+div#bike-info,.navbar{
+    color: rgb(243, 13, 13);
+}
+div#bike-info h1{
+    padding-top: 5%;
+    text-shadow: 2px 2px 2px  rgb(27, 25, 25);
+    font-size: 6rem;
+    text-align: center;
+    animation:fade-in 3s;
+}
+@keyframes fade-in{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+div#bike-info h4{
+    position: relative;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px white;
+    text-align: center;
+    animation: fade-in 6s;
+}
+
+#honda-span{
+    position: relative;
+    animation: move-right 2s;
+}
+@keyframes move-right{
+    from{left:-200px;}
+    to{left:0px}
+}
+
+#fireblade-span{
+    position: relative;
+    animation: move-down 2s;
+}
+@keyframes move-down{
+    from{top:-100px;}
+    to{top:0px;}
+}
+
+#nineteen-span{
+    position: relative;
+    animation: move-left 2s;
+}
+@keyframes move-left{
+    from{left:60px;}
+    to{left:0px}
+}
+
+#slogan-span{
+    margin: 1% -10%;
+    position: absolute;
+    animation: roll 2s;
+}
+@keyframes roll{
+    from{opacity:0;transform: rotateX(0deg);top:100px}
+    to{opacity:1;transform: rotateX(360deg);top:0px}
+}
+
+/*  MODELS PAGE CSS   */
+img.card-img-top,div.card-body{
+    margin-top:5%;
+}
+
+/* HISTORY PAGE CSS */
+#history-page-info p{
+    padding: 0;
+    line-height: 2.7rem;
+    margin-top:15%; 
+}
+
+/* CONTACT PAGE CSS */
+div#contact-page-info{
+    margin:0;
+    padding:10% 5%;
+    text-align:center;
+}
+img#contact-page-image{
+    margin:10% 0;
+}
+
+
+
+/* MEDIA QUERIES  */
+/* HOME PAGE QUERIES*/
+@media (max-width:320px) { 
+ span#slogan-span{
+      position:relative;
+    } 
+}
+@media (max-width:375px) { 
+   span#slogan-span{
+      font-size:85% !important;     
+    } 
+}
+@media (max-width:425px) { 
+   span#slogan-span{
+       margin:-5% -30%!important;
+    } 
+}
+@media (max-width: 576px) { 
+h1{
+    padding:20% 0 10% 0!important;
+    font-size:340%!important;
+}
+   h4{
+       margin:0 -10%!important;
+        padding:0 0%!important;
+    } 
+}
+
+@media (max-width: 575.98px) { 
+    h1{
+        font-size:340%!important;
+    }
+   h4{
+       margin:0 -10%!important;
+        padding:0!important;
+    } 
+}
+
+@media (max-width: 767.98px) { 
+    span#slogan-span{
+        margin:0 -20% ;
+    } 
+    div#about-page-info p,img#about-page-image{
+        margin:2% auto;
+    }
+}
+
+@media (min-width: 768px) { 
+    span#slogan-span{
+        margin:0 -20% ;
+    } 
+    div#about-page-info p,img#about-page-image{
+        margin:2% auto;
+    }
+}
+@media (min-width: 992px) { 
+    span#slogan-span{
+       margin:5% -15.5% !important;
+    } 
+}
+@media  (min-width: 1200px) { 
+   span#slogan-span{
+       margin:5% -13.5% !important;
+    } 
+}
+@media  (min-width: 1440px) { 
+    h1{
+        padding-top:10%!important;
+    }
+    span#slogan-span{
+        position:relative;
+    } 
+}
+
+
+/* HISTORY PAGE QUERIES*/
+@media (max-width:320px) { 
+   #history-page-info p{
+       line-height:170%;
+    }
+    img#history-page-image{
+         width:100%;
+    }
+}
+@media (max-width:375px) { 
+   #history-page-info p{
+       line-height:170%;
+    }
+    img#history-page-image{
+         width:100%;
+    }
+}
+@media (max-width:425px) { 
+   #history-page-info p{
+       line-height:170%;
+    }
+    img#history-page-image{
+         width:100%;
+    }
+}
+@media  (max-width: 991.98px) { 
+div#history-page-info{
+        margin:0;
+    }
+    img#history-page-image{
+        margin:0;
+        width:100%;
+    }
+}
+@media (max-width:1440px) { 
+   #history-page-info p{
+       margin:10% 0!important;
+    }
+    img#history-page-image{
+         margin:5% 0!important;
+    }
+}
+
+/* MODELS PAGE QUERIES */
+@media (max-width: 320px) { 
+    img.card-img-top,div.card-body{
+       padding-right:29% !important;
+    }
+}
+@media (max-width: 375px) { 
+    img.card-img-top{
+       height:50vh!important;
+    }
+     div.card-body{
+        margin:10%;
+        padding:0;
+        text-align:left;
+    }
+    div.col-lg-4.card{
+    height:95vh!important;
+        width:135%!important;
+    }
+}
+
+@media (max-width: 425px) { 
+    img.card-img-top,div.card-body{
+       margin:0 -10px!important;
+       width:94%;
+       padding-right:100px;
+    }
+     div.card-body{
+        margin:0;
+        padding:0% 20% 0 0;
+        text-align:left;
+    }
+    div.col-lg-4.card{
+        margin:0;
+        padding-right:34%;
+    }
+}
+@media (max-width: 576px) { 
+   img.card-img-top{
+        padding-right:40%!important;
+        height:400px;
+        margin:0;
+       
+    }
+    div.card-body p{
+        margin:0;
+        padding-right:30%;
+    }
+}
+
+@media (max-width: 768px) { 
+   img.card-img-top,div.card-body{
+       padding-right:33%;
+    }
+}
+@media (max-width: 992px) { 
+   img.card-img-top,div.card-body{
+       width:140%!important;
+    }
+}
+
+
+
+
+
+/* CONTACT PAGE QUERIES */
+@media  (min-width: 320px) { 
+div#contact-page-info{
+        margin:0;
+    }
+    img#contact-page-image{
+        margin:10% 0;
+        width:100%;
+    }
+}
+@media  (min-width: 375px) { 
+div#contact-page-info{
+        margin:0;
+    }
+    img#contact-page-image{
+        margin:10% 0;
+        width:100%;
+    }
+}
+@media  (min-width: 425px) { 
+div#contact-page-info{
+        margin:0;
+    }
+    img#contact-page-image{
+        margin:10% 0;
+        width:100%;
+    }
+}
+@media  (min-width: 576px) { 
+div#contact-page-info{
+        margin:-20% 0;
+    }
+    img#contact-page-image{
+        margin:20% 0;
+    }
+}
+@media  (min-width: 768px) { 
+div#contact-page-info{
+        margin:0;
+    }
+    img#contact-page-image{
+        margin:0 15%;
+    }
+}
+@media  (max-width: 767.98px) { 
+div#contact-page-info{
+        margin:0;
+    }
+    img#contact-page-image{
+        margin:1% 0;
+        width:100%;
+    }
+}
+
+@media  (max-width: 991.98px) { 
+div#contact-page-info{
+        margin:0;
+    }
+    img#contact-page-image{
+        margin:1% 0;
+        width:100%;
+    }
+}
+
+@media  (min-width: 992px) { 
+div#contact-page-info{
+        margin:0;
+    }
+    img#contact-page-image{
+        margin:10% 0;
+        width:100%;
+    }
+}
